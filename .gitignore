@@ -2,6 +2,7 @@ env-management/
 .idea/
 __pycache__/
 website/db.sqlite3
+help.txt
 
 website/main/migrations/*_initial.py
 website/news/migrations/*_initial.py
