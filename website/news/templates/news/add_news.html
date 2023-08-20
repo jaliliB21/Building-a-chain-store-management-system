@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+
+
+{% if request.user.rol.name == 'system_admin' %}
+<div class="mb-3">
+    <div class="px-4 py-4">
+        <h1>{{ title }}</h1>
+        <hr>
+        <form method="POST" action="." enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form }}
+        
+            <button class="btn btn-outline-primary mt-2 mx-4" type="submit">confirm</button>
+        </form>
+    </div>
+</div>
+<br>
+{% else %}
+<h1>{{ request.user.username }} you can't add news</h1>
+{% endif %}
+{% endblock %}
+

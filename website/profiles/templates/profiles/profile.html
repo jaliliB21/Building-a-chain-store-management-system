@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+{% block title %} profile {% endblock %}
+
+{% block content %}
+<div class='text-dark p-3 py-4'>
+    <div>
+        {% if request.user.profile_image %}
+        <img src="{{ request.user.profile_image.url }}" class="rounded-circle mx-auto d-block" style="width: 200px ; height: 200px;" alt="...">
+        {% endif %}
+        <h1 class="text-center py-2">Hello {{ request.user.first_name}} {{ request.user.last_name}}</h1>
+        <p class="text-center">Username: {{ request.user.username }}</p>
+    
+    </div>
+    
+</div>
+{% endblock %}

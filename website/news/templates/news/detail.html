@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+
+{% block title %} Detail {% endblock %}
+{% block content %}
+<div class="container text-center py-4">
+    <div class="card" style="width: 100%;">
+        <img src="{{ news.news_image.url }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ news.title }}</h5>
+          <p class="card-text">{{ news.text }}</p>
+          <br><br>
+          <hr>
+          <p class="card-text">{{ news.created_at }}</p>
+          <a href="{% url 'news:news' %}" class="btn btn-primary">back</a>
+          {% if request.user.rol.name == 'system_admin' and request.user == news.created_by %}
+          <hr>
+          <a href="{% url 'news:edit' news.id %}" class="btn btn-success">Edit</a>
+          <a href="{% url 'news:delete' news.id %}" class="btn btn-danger">Delete</a>
+          {% endif %}
+        </div>
+    </div>
+</div>
+<br><br><br>
+{% endblock %}

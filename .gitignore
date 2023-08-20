@@ -1,0 +1,10 @@
+env-management/
+.idea/
+__pycache__/
+website/db.sqlite3
+
+website/main/migrations/*_initial.py
+website/news/migrations/*_initial.py
+website/profiles/migrations/*_initial.py
+website/stores/migrations/*_initial.py
+website/users/migrations/*_initial.py

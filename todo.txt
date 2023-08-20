@@ -1,0 +1,39 @@
+Todo
+    -DONE Create virtual env
+    -DONE Install and setup
+    -DONE Create home page and Setting base and home page (main app)
+    -DONE Create store app
+        -DONE Create model store
+        -DONE Init database
+    -DONE create users app 
+        -DONE Create model Custom User and model Rol
+        -DONE Create custom user
+        -DONE Init database, super user, test run
+        -DONE Login cunsom user
+        -DONE Logout custom user
+        -DONE Add user by the system administrator
+        -DONE Create employees page
+        -DONE Show employeeses in employees page
+        -DONE Display employees sorted by newest employee
+    -DONE Add store by the system administrato
+    -DONE Show stores in srore page
+    -DONE Display stores sorted by newest store
+    -DONE DONE Create news app
+        -DONE Create model news
+        -DONE Init database
+        -DONE Create a news page to view news
+        -DONE Add news the system administrator
+        -DONE Create detail page
+        -DONE Show detail news in detail page 
+    -DONE Create profiles app
+        -DONE Show profile page to employees
+    
+
+    -DONE Editing and deleting news by the system administrator and whoever created it
+    -DONE Editing and deleting stores by the system administrator
+    ....
+
+
+
+
+

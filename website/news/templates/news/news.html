@@ -1,0 +1,29 @@
+{% extends 'main/base.html' %}
+
+{% block title %} News {% endblock %}
+
+{% block content %}
+<div class='text-dark p-3'>
+    <h1>Welcome {{ request.user.username}} to news</h1>
+</div>
+{% if request.user.rol.name == 'system_admin' %}
+<div>
+  <a href="{% url 'news:add_news' %}"><button class="btn btn-outline-primary mt-4 mx-4" type="submit">Add news</button></a>
+</div>
+{% endif %}
+
+{% for new in news %}
+<div class="container text-center py-4">
+    <div class="card" style="width: 18rem;">
+        <img src="{{ new.news_image.url }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ new.title }}</h5>
+          <p class="card-text">{{ new.description }}</p>
+          <a href="{% url 'news:detail' new.id %}" class="btn btn-primary">More</a>
+        </div>
+    </div>
+</div>
+
+<br><br>
+{% endfor %}
+{% endblock %}
