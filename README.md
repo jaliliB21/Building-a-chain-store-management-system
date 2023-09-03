@@ -20,8 +20,11 @@ And the store manager and the general manager both have the possibility to add n
 
 This site has three main sections:
 
-1- Employees page where all users can see all the employees and managers of the stores in the collection
-2- Stores page where all branches with their specifications can be seen
-3- The news page where all the news in the collection are displayed
+1- Employees page where all users can see all the employees and managers of the stores in the collection<br>
+2- Stores page where all branches with their specifications can be seen<br>
+3- The news page where all the news in the collection are displayed<br>
 
 All these 3 sections are visible only to logged in users.
+
+
+- In the above project, custom user in Django is used to add employees, which is an advanced topic in Django.
