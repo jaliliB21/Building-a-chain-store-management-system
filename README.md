@@ -6,12 +6,9 @@ Hi
 this project create 
 This is a system for managing employees and multiple branches, which also has internal news.
 Site member users have three roles:
-
-the general administrator of the system
-
-store manager
-
-and the employee
+1- the general administrator of the system<br>
+2- store manager<br>
+3- the employee<br>
 
 
 
