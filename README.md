@@ -18,3 +18,10 @@ and the employee
 that the general manager of the system can add employees and store managers and provide a username and password for them to enter the site The general manager can add a new store
 And the store manager and the general manager both have the possibility to add news, but only the general manager is allowed to add a new store and a new employee.
 
+This site has three main sections:
+
+1- Employees page where all users can see all the employees and managers of the stores in the collection
+2- Stores page where all branches with their specifications can be seen
+3- The news page where all the news in the collection are displayed
+
+All these 3 sections are visible only to logged in users.
